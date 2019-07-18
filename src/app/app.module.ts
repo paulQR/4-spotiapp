@@ -5,6 +5,9 @@ import { FormsModule } from '@angular/forms';
 //<--- Modulo de rutas
 import { RouterModule } from '@angular/router';
 
+//peticion http
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
@@ -18,7 +21,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { ROUTES } from './app.routes';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(ROUTES, {useHash:true}) ],
+  imports:      [ BrowserModule, HttpClientModule, FormsModule, RouterModule.forRoot(ROUTES, {useHash:true}) ],
   declarations: [ AppComponent, HelloComponent, HomeComponent, ArtistaComponent, SearchComponent, NavbarComponent ],
   bootstrap:    [ AppComponent ]
 })
