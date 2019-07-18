@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 //<--- Modulo de rutas
 import { RouterModule } from '@angular/router';
 
-//peticion http
+// peticion http
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
